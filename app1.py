@@ -13,6 +13,10 @@ def hello_world():
 def ciao_mondo():
   return render_template("index1.html", Titolo='Benvenuti', Testo='Ciao, mondo!')
 
+@app.route('/es')
+def hola_mundo():
+  return render_template("index1.html", Titolo='Hola', Testo='Hola, mundo!')
+
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True)

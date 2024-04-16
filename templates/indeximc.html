@@ -1,6 +1,7 @@
 <html>
     <head>
         <script type=text/javascript src="{{url_for('static', filename='js/imc.js') }}"></script>
+        <img src="" alt="">
         <title>
             {{titolo}}
         </title>
@@ -20,7 +21,15 @@
             {{altezza}}
             <input type="number" id="altezza">
         </p>
-        <button onclick="Click">{{Inizia}}</button>
-    
+        <p id="dai"> 
+        </p>
+        <p id="imc">
+             
+        </p>
+        <p id="img">
+             
+        </p>
+        
+        <button onclick="Click()">{{Inizia}}</button>
     </body>
 </html>

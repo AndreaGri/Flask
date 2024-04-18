@@ -10,21 +10,19 @@ function Click()    {
     document.getElementById('dai').innerHTML= 'Il tuo IMC è '+ imc
     if (imc<18.5) {
         document.getElementById('imc').innerHTML= 'Sei sottopeso'
-        img='static/images/1200px-BMI_grid_it.svg.png'
-        document.getElementById('img').innerHTML= img
-
+        img= static/images/carne.jpg
     }
     else if ( 18.5 < imc < 25) {
         document.getElementById('imc').innerHTML= 'Sei normopeso'
-        img='/workspace/Flask/static/images/1200px-BMI_grid_it.svg.png'
-        document.getElementById('img').innerHTML= img
+        img=static/images/riso.jpg
+        
 
     }
     else if (imc>25) {
         document.getElementById('imc').innerHTML= 'Sei sovrappeso'
-        img='static/images/1200px-BMI_grid_it.svg.png'
-        document.getElementById('img').innerHTML= img
+        img=static/images/insalata.jpg
+        
 
     }
-    
+    document.getElementById('img').src= img
 }
